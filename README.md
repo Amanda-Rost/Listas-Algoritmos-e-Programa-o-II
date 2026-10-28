@@ -7,7 +7,7 @@ Execute o comando abaixo para criar o executavel:
 
 * Arquivo unico:
 ```bash
-gcc calculadora.c -o calculadora
+gcc exercicio5.c -o exercicio5
 ```
 * Grupo de arquivos um deles:
 1) 
