@@ -40,17 +40,4 @@ int main() {
     return 0;
 }
 
-/*
- * RESPOSTA SOBRE O AVANÇO EM MEMÓRIA (p++):
- * 
- * Quando fazemos `p++`, o compilador avança exatamente `sizeof(struct Produto)` bytes,
- * que na maioria das arquiteturas de 32/64 bits corresponde a 36 bytes:
- * 
- * - char nome[30]: 30 bytes
- * - Padding (alinhamento de memória): 2 bytes (para alinhar o float em um endereço múltiplo de 4)
- * - float preco: 4 bytes
- * Total = 36 bytes.
- * 
- * O incremento de ponteiro em C sempre multiplica o avanço pelo tamanho do tipo para o qual
- * ele aponta.
- */
+// Resposta pergunta: Fazer `p++` não pula 1 byte, mas sim o tamanho do tipo para o qual ele aponta.
